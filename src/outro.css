@@ -1,0 +1,30 @@
+.prose code {
+    font-family: monospace;
+    color: #000;
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+
+.prose pre {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 1em;
+    overflow-x: auto;
+    color: #000;
+    border: 1px solid #eaecf0;
+    border-radius: 2px;
+}
+
+.prose th, .prose td {
+    border: 1px solid #aaa;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.prose th {
+    background-color: #f6f8fa;
+    font-weight: 500;
+}
+

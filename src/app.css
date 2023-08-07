@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elementos 'prose' geral */
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.prose {
+	color: #333;
+	line-height: 1.5;
+}
+
+/* Headers */
+.prose h1,
+.prose h2 {
+	margin: 0.5em 0 0.2em;
+	font-weight: 500;
+}
+
+.prose h3,
+.prose h4,
+.prose h7,
+.prose h6 {
+	margin: 0.5em 0 0.2em;
+	font-weight: 500;
+}
+
+.prose h1 {
+	font-size: 1.8em;
+}
+.prose h2 {
+	font-size: 1.5em;
+}
+.prose h3 {
+	font-size: 1.2em;
+}
+.prose h4 {
+	font-size: 1em;
+}
+.prose h5 {
+	font-size: 1em;
+}
+.prose h6 {
+	font-size: 1em;
+}
+
+/* Parágrafos */
+.prose p {
+	font-size: 1em;
+	margin: 1em 0;
+}
+
+/* Links */
+.prose a {
+	color: rgb(59 130 246);
+	text-decoration: none;
+}
+
+.prose a:hover {
+	text-decoration: underline;
+}
+
+/* Código e blocos de código */
+/* Código em linha */
+.prose code,
+.prose pre {
+	font-size: 14px;
+	font-family: monospace;
+	color: #000;
+	background-color: #eeeeee; /* Adicionando um background color */
+	white-space: pre; /* Mantém os espaços e as quebras de linha */
+}
+
+.prose code {
+	padding: 5;
+}
+
+/* Blocos de código */
+.prose pre {
+	border: 1px solid #ccc; /* Bordas apenas nos blocos de código */
+	padding: 20px; /* Espaçamento interno um pouco maior para diferenciar */
+	overflow-x: auto; /* Barra de rolagem caso o bloco de código seja muito amplo */
+	line-height: 1.5;
+	display: block;
+}
+
+/* Blocos de citação */
+.prose blockquote {
+	border-left: 0.25rem solid #ccc;
+	padding: 0 1em;
+	color: #42484f;
+}
+
+/* Imagens */
+.prose img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Listas */
+.prose ul,
+.prose ol {
+	padding-left: 1em;
+}
+
+.prose ul {
+	list-style-type: disc;
+}
+
+.prose ol {
+	list-style-type: decimal;
+}
+
+.prose li {
+	margin: 0.3em 0;
+}
+
+/* Tabelas */
+.prose table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1em 0;
+}
+
+.prose th,
+.prose td {
+	border: 1px solid #aaa;
+	padding: 0.5em;
+	text-align: left;
+	font-size: 1em;
+}
+
+.prose th {
+	background-color: #eeeeee;
+	font-weight: 600;
+}
