@@ -1,9 +1,8 @@
-
 <nav class="flex items-center justify-between pt-4">
 	<a href="/" class="text-2xl font-semibold text-gray-900">Hyperuranion Blog</a>
 
-	<span class="gap-10 sm:flex sm:items-center">
-		<!-- <span
+	<!-- <span class="gap-10 sm:flex sm:items-center">
+		 <span
 			><ul class="text-sm font-medium sm:flex sm:gap-8">
 				<li>
 					<a
@@ -14,7 +13,7 @@
 					>
 				</li>
 			</ul></span
-		> -->
+		>
 		<span
 			><ul class="flex gap-4">
 				<li>
@@ -34,5 +33,5 @@
 				</li>
 			</ul></span
 		></span
-	>
+	> -->
 </nav>
