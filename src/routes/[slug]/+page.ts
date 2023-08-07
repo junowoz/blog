@@ -1,4 +1,25 @@
 import { error } from '@sveltejs/kit';
+import { index } from '../../posts/index';
+
+export async function load({ params }) {
+	try {
+		const post = index[params.slug];
+
+		if (!post) {
+			throw error(404, `Could not find ${params.slug}`);
+		}
+
+		const markdown = await post;
+
+		return {
+			content: markdown.default,
+			meta: markdown.metadata
+		}
+	} catch (e) {
+		throw error(404, `Could not find ${params.slug}`)
+	}
+}
+
 
 // export async function load({ params }) {
 // 	try {
@@ -20,16 +41,3 @@ import { error } from '@sveltejs/kit';
 // 	}
 // }
 
-
-export async function load({ params }) {
-	try {
-		const post = await import(`../../posts/${params.slug}.md`)
-
-		return {
-			content: post.default,
-			meta: post.metadata
-		}
-	} catch (e) {
-		throw error(404, `Could not find ${params.slug}`)
-	}
-}
