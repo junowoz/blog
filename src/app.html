@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="https://fav.farm/🌐" />
@@ -9,8 +9,18 @@
 		/>
 		%sveltekit.head%
 	</head>
-	<body>
-		<!-- data-sveltekit-preload-data="hover" -->
+	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+		<noscript>
+			<style type="text/css">
+				.pagecontainer {
+					display: none;
+				}
+			</style>
+			<div class="noscriptmsg">You don't have javascript enabled. Good luck with that.</div>
+		</noscript>
+		<script>
+			alert('javascript is running');
+		</script>
 	</body>
 </html>
