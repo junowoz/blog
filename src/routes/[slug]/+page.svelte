@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
-	import Upvote from '../../components/Upvote.svelte';
-	import Share from '../../components/Share.svelte';
 	import Footer from '../../components/Footer.svelte';
 	export let data;
 

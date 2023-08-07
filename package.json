@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "node generateIndex.js && vite dev",
-		"build": "vite build",
+		"build": "node generateIndex.js && vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
