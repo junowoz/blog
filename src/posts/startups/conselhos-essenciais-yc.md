@@ -1,4 +1,11 @@
-# Conselhos Essenciais - Y Combinator
+---
+title: 'Conselhos Essenciais: Y Combinator'
+description: 'A Y Combinator é uma incubadora de empresas notável que oferece uma variedade de conselhos às startups, alguns táticos e pretendendo ser úteis no dia a dia, e outros mais fundamentais. Eles têm uma série de princípios orientadores que consideram essenciais para o sucesso de qualquer startup. Estes conselhos, sejam eles de senso comum ou contraintuitivos, têm o potencial de guiar a maioria das startups na direção certa.'
+date: '2023-08-07'
+category: 'startups'
+tags: ['y combinator', 'empreendedorismo']
+published: true
+---
 
 A Y Combinator é uma incubadora de empresas notável que oferece uma variedade de conselhos às startups, alguns táticos e pretendendo ser úteis no dia a dia, e outros mais fundamentais. Eles têm uma série de princípios orientadores que consideram essenciais para o sucesso de qualquer startup. Estes conselhos, sejam eles de senso comum ou contraintuitivos, têm o potencial de guiar a maioria das startups na direção certa.
 

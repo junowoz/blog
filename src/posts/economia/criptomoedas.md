@@ -1,14 +1,13 @@
 ---
-title: Criptomoedas
+title: 'Criptomoedas: Bitcoin, Ethereum e conceitos essenciais'
 description: Ele surge em 2008 em um artigo, graças ao "Satoshi Nakamoto". É um sistema que permite que pessoas possam enviar dinheiro pela internet. Surge com os CypherPunks, os quais são um grupo de pesquisadores criptográficos, que procuravam formas de fazer que a internet fosse mais segura. Na década de 90, eles criaram a PGP, que permitia você enviar mensagens para pessoas de forma criptografada.
 date: '2023-4-16'
 category: 'economia'
-tags:
-  - web3
+tags: ['web3']
 published: true
 ---
 
-## Por que o Bitcoin existe?
+Por que o Bitcoin existe?
 
 Ele surge em 2008 em um artigo, graças ao "Satoshi Nakamoto". É um sistema que permite que pessoas possam enviar dinheiro pela internet. Surge com os CypherPunks, os quais são um grupo de pesquisadores criptográficos, que procuravam formas de fazer que a internet fosse mais segura. Na década de 90, eles criaram a PGP, que permitia você enviar mensagens para pessoas de forma criptografada.
 
@@ -35,8 +34,8 @@ Desta forma temos um banco de dados geral, transparente, imutável, onde podemos
 
 ### Vantagens
 
-* Realizando pagamentos, tudo será mais direto. Mais rápido, e sem intermediários.
-* Transação irreversível
+- Realizando pagamentos, tudo será mais direto. Mais rápido, e sem intermediários.
+- Transação irreversível
 
 ### Mineradores
 
@@ -56,9 +55,9 @@ Cada bloco minerado (10 min entre bloco), o minerador ganha novos bitcoins. Cada
 
 O lastro do ouro são as características físicas do mesmo. No caso do lastro do dólar, é o poder dos Estados Unidos. Já o lastro do bitcoin, são os milhares de mineradores, e todo o poder computacional que existe por trás dessa rede.
 
-* Escassez
-* Segurança
-* Capacidade dos mineradores minerarem
+- Escassez
+- Segurança
+- Capacidade dos mineradores minerarem
 
 ## Guia das altcoins
 
@@ -66,11 +65,11 @@ Todo Cripto ativo é uma criptomoeda, mas nem toda criptomoeda é um cripto ativ
 
 ### Criptoativos
 
-* Meios de pagamento
-  * Bitcoin, Ripple, Litecoin (Versão mais rápida do bitcoin), etc.
-* Layer 1: Uma camada básica onde você pode ter vários serviços. Ethereum, Stellar, Polkadot (o petróleo digital), são exemplos de. Uma grande plataforma, um ecossistema onde você pode criar qualquer coisa. Aqui existe o grupo da web3, que vem para mudar a web2 e quebrar esse paradigma. Você é dono dos seus dados (porque você tem controle deles, já que estão armazenados num blockchain). Brave, por exemplo, nos remunera pela nossa atenção, nos pagando por ver anúncios.
-  * Na web2 o modelo de negócio e usar nossos dados para gerar dinheiro. Eles usam nossos dados, e vendem para anunciantes para ganhar dinheiro com a nossa atenção.
-* Layer 2: BAT (funciona na rede do Ethereum), Chainlink: um oráculo que toma informações reais, só que no blockchain. Uma rede de fornecimento de informação.
+- Meios de pagamento
+  - Bitcoin, Ripple, Litecoin (Versão mais rápida do bitcoin), etc.
+- Layer 1: Uma camada básica onde você pode ter vários serviços. Ethereum, Stellar, Polkadot (o petróleo digital), são exemplos de. Uma grande plataforma, um ecossistema onde você pode criar qualquer coisa. Aqui existe o grupo da web3, que vem para mudar a web2 e quebrar esse paradigma. Você é dono dos seus dados (porque você tem controle deles, já que estão armazenados num blockchain). Brave, por exemplo, nos remunera pela nossa atenção, nos pagando por ver anúncios.
+  - Na web2 o modelo de negócio e usar nossos dados para gerar dinheiro. Eles usam nossos dados, e vendem para anunciantes para ganhar dinheiro com a nossa atenção.
+- Layer 2: BAT (funciona na rede do Ethereum), Chainlink: um oráculo que toma informações reais, só que no blockchain. Uma rede de fornecimento de informação.
 
 ## Por que investir em criptomoedas?
 
@@ -80,8 +79,8 @@ Faça um investimento pequeno com olhar no logo prazo. Um valor pequeno, além d
 
 Você deve ter cuidados com as oscilações, porque o efeito da volatilidade no curto prazo, é ofuscado pelo aumento da tecnologia.
 
-* Tecnologia nova, grande potencial.
-* Correlação baixa,
+- Tecnologia nova, grande potencial.
+- Correlação baixa,
 
 ## Como investir em cripto-moedas de forma segura
 
@@ -97,9 +96,9 @@ Já se você quer fazer parte da tecnologia, e se afundar no movimento cripto, c
 
 **Gestão ativa:** Você realiza constantes mudanças no seu portfólio e vai se adaptando.
 
-* Como a Hashdex investe de forma segura? Quais ativos investir? Se confia num índice chamado: NASDAQ CRYPTO INDEX, que é bem avaliado pela NASDAQ.
-* Depois, se escolhe a corretora, e são Exchanges reguladas nos Estados Unidos, com balanços, politicas internas e históricos sólidos.
-* Logo, se faz uma custódia, com um armazenamento de forma muito segura. Se contratam custodiantes terceirizados, que utilizam deep cold storage, uma alternativa muito cara para investidores individuais, mas disponível por meio de fundos.
+- Como a Hashdex investe de forma segura? Quais ativos investir? Se confia num índice chamado: NASDAQ CRYPTO INDEX, que é bem avaliado pela NASDAQ.
+- Depois, se escolhe a corretora, e são Exchanges reguladas nos Estados Unidos, com balanços, politicas internas e históricos sólidos.
+- Logo, se faz uma custódia, com um armazenamento de forma muito segura. Se contratam custodiantes terceirizados, que utilizam deep cold storage, uma alternativa muito cara para investidores individuais, mas disponível por meio de fundos.
 
 ## Como armazenar cripto ativos
 
@@ -117,17 +116,17 @@ Menos segura, porém muito mais comum, ter um aplicativo que gerencie sua cartei
 
 Você gera a chave completamente desconectada da internet em computadores que nunca tiveram acesso à internet, se separam as chaves em alguns pedaços, e se armazenam em cofres. É isso o que os mais ricos fazem. Para fazer esse armazenamento, normalmente as empresas contratam custodiantes que são empresas focadas em fazer esse armazenamento. Guardam as chaves em abrigos subterrâneos ao redor do mundo. Usam computadores que nunca foram utilizados, tiram a placa de rede. Geram a chave privada nesse computador, quebram a chave privada em vários pedaços e armazenam de forma descentralizada.
 
-* Esse tipo de armazenamento só é feito para investidores muito grandes. No caso, fundos da hashdex têm esse tipo de armazenamentos.
+- Esse tipo de armazenamento só é feito para investidores muito grandes. No caso, fundos da hashdex têm esse tipo de armazenamentos.
 
 ## NA PRÁTICA - Configurando uma carteira de Bitcoin
 
 Ao baixar uma hot wallet:
 
-* Escolha uma confiável.
-* Lembre que sua cripto está no blockchain e você só pode acessar com a seed phrase.
-* Guarde bem sua seed phrase.
-* Você deverá pagar uma taxa de mineração (um valor para a sua transação ser registrada no blockchain).
-  * Quanto tem mais pessoas querendo fazer as transações, tem simples lei de oferta e demanda, portanto, se a rede estiver congestionada, a taxa vai aumentar. Você tem outras opções para pagar taxas mais baratas, mas o tempo de envio será muito maior.
+- Escolha uma confiável.
+- Lembre que sua cripto está no blockchain e você só pode acessar com a seed phrase.
+- Guarde bem sua seed phrase.
+- Você deverá pagar uma taxa de mineração (um valor para a sua transação ser registrada no blockchain).
+  - Quanto tem mais pessoas querendo fazer as transações, tem simples lei de oferta e demanda, portanto, se a rede estiver congestionada, a taxa vai aumentar. Você tem outras opções para pagar taxas mais baratas, mas o tempo de envio será muito maior.
 
 ## Quais criptomoedas comprar?
 
@@ -146,11 +145,11 @@ Com blockchain, você consegue automatizar esses processos e terceirizar essa co
 
 ### Camadas
 
-* Camada de liquidação de ativos - o próprio blockchain
-* Emissão dos ativos - tokenização (registrar imóveis num blockchain, ao invés de registrar no cartório. Stablecoins - fiat tokenizada)
-* Smart Contracts com funções específicas - exchange, gestão de garantias, negociação eletrônica, entrega contra pagamento (garantir que eu receba algo de quem compre).
-  * Você entrega seu dinheiro pro smart contract, ele retem o dinheiro, e entrega pro destinatário uma vez a condição seja concluída.
-  * Você pode basicamente substituir a B3 por completo, de forma mais segura e mais barata.
+- Camada de liquidação de ativos - o próprio blockchain
+- Emissão dos ativos - tokenização (registrar imóveis num blockchain, ao invés de registrar no cartório. Stablecoins - fiat tokenizada)
+- Smart Contracts com funções específicas - exchange, gestão de garantias, negociação eletrônica, entrega contra pagamento (garantir que eu receba algo de quem compre).
+  - Você entrega seu dinheiro pro smart contract, ele retem o dinheiro, e entrega pro destinatário uma vez a condição seja concluída.
+  - Você pode basicamente substituir a B3 por completo, de forma mais segura e mais barata.
 
 ## Últimos conselhos
 
@@ -159,7 +158,7 @@ Uma alocação pequena com visão de longo prazo. De-Fi tem o potencial de mudar
 ```python
 markdown = Redcarpet.new("Hello World!")
 assssss
-dddsks 
+dddsks
   python 2
 ```
 

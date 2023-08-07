@@ -1,4 +1,11 @@
-# Uma Introdução ao Espiritismo
+---
+title: 'Uma Introdução ao Espiritismo'
+description: 'O Espiritismo é uma doutrina que tem como princípios básicos a imortalidade da alma, a reencarnação e a comunicação entre o mundo espiritual e o mundo físico. Aqui, vamos explorar um pouco mais sobre essas crenças, as obras principais dessa doutrina e algumas recomendações de leitura para quem deseja entender melhor o Espiritismo.'
+date: '2023-05-29'
+category: 'espiritismo'
+tags: ['filosofia']
+published: true
+---
 
 O Espiritismo é uma doutrina que tem como princípios básicos a imortalidade da alma, a reencarnação e a comunicação entre o mundo espiritual e o mundo físico. Aqui, vamos explorar um pouco mais sobre essas crenças, as obras principais dessa doutrina e algumas recomendações de leitura para quem deseja entender melhor o Espiritismo.
 
@@ -23,5 +30,5 @@ As ideias fundamentais do Espiritismo estão contidas nas cinco obras básicas d
 Após a leitura das obras básicas, há uma série de livros psicografados por diferentes médiuns que ajudam a aprofundar o entendimento da doutrina espírita:
 
 - **Série "André Luiz" (Francisco Cândido Xavier)**: Esta série de 16 livros traz uma visão detalhada da vida no mundo espiritual, com descrições sobre a reencarnação, o processo de desencarne e a vida após a morte.
-- **Série "Joanna de  ngelis" (Divaldo Franco)**: Joanna de  ngelis é uma das guias espirituais mais amadas do Brasil. Através do médium Divaldo Franco, ela oferece mensagens de amor e sabedoria para ajudar os indivíduos em sua jornada espiritual.
+- **Série "Joanna de ngelis" (Divaldo Franco)**: Joanna de ngelis é uma das guias espirituais mais amadas do Brasil. Através do médium Divaldo Franco, ela oferece mensagens de amor e sabedoria para ajudar os indivíduos em sua jornada espiritual.
 - **Série "Emmanuel" (Francisco Cândido Xavier)**: Emmanuel é um espírito guia que, através do médium Chico Xavier, trouxe uma série de livros com ensinamentos sobre a moral cristã sob a perspectiva do Espiritismo.

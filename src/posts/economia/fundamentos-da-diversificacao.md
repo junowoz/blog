@@ -1,6 +1,6 @@
 ---
-title: Fundamentos da Diversificação
-description: Não olhe apenas para a rentabilidade, e não negligencie o risco. Rentabilidade é o que você vê, e risco é o que não.
+title: 'Fundamentos da Diversificação: Conceitos'
+description: 'Não olhe apenas para a rentabilidade, e não negligencie o risco. Rentabilidade é o que você vê, e risco é o que não.'
 date: '2023-4-14'
 category: 'economia'
 published: true

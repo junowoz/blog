@@ -1,16 +1,16 @@
 <script lang="ts">
 	import NavBar from '../components/NavBar.svelte';
-	import Footer from '../components/Footer.svelte';
 	import { formatDate } from '$lib/utils';
+	import type { Tags } from '$lib/types';
 	import * as config from '$lib/config';
 	export let data;
 
 	let searchQuery = '';
 
 	//tag cloud
-	let selectedTags = [];
+	let selectedTags: Tags[] = [];
 
-	function handleTagClick(tag) {
+	function handleTagClick(tag: string) {
 		const index = selectedTags.indexOf(tag);
 		if (index < 0) {
 			selectedTags = [...selectedTags, tag]; // Se a tag não está no array, adiciona
@@ -26,8 +26,9 @@
 
 	//date sort
 	let sortOrder = 'Mais novos';
-	function handleSortChange(event) {
-		sortOrder = event.target.value;
+	function handleSortChange(event: Event) {
+		const target = event.target as HTMLSelectElement;
+		sortOrder = target.value;
 	}
 
 	//switch pages
@@ -60,7 +61,7 @@
 <div class="flex mt-6 space-x-2">
 	<!-- Search Input -->
 	<input
-		class="flex-grow py-1 px-2 border border-gray-300 rounded-md"
+		class="flex-grow py-1 px-2 border border-gray-300 rounded-md text-sm"
 		type="text"
 		placeholder="Pesquisar.."
 		bind:value={searchQuery}
@@ -69,7 +70,7 @@
 	<select
 		bind:value={sortOrder}
 		on:change={handleSortChange}
-		class="flex-grow-1 px-2 border border-gray-300 rounded-md"
+		class="flex-grow-1 px-2 border border-gray-300 rounded-md text-sm"
 		name="sort"
 	>
 		<option>Mais novos</option>
@@ -108,7 +109,7 @@
 										.includes(searchQuery.toLowerCase())) : false) || post.category
 							.toLowerCase()
 							.includes(searchQuery.toLowerCase())))
-			.sort( (a, b) => (sortOrder === 'Mais novos' ? new Date(b.date) - new Date(a.date) : new Date(a.date) - new Date(b.date)) )
+			.sort( (a, b) => (sortOrder === 'Mais novos' ? new Date(b.date).getTime() - new Date(a.date).getTime() : new Date(a.date).getTime() - new Date(b.date).getTime()) )
 			.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage) as post}
 			<li>
 				<a
@@ -158,5 +159,3 @@
 		Seguinte »
 	</button>
 </div>
-
-<Footer />

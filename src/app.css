@@ -9,7 +9,7 @@ html {
 }
 
 .prose {
-	color: #333;
+	color: #222222;
 	line-height: 1.5;
 }
 
@@ -29,10 +29,10 @@ html {
 }
 
 .prose h1 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 .prose h2 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 .prose h3 {
 	font-size: 1.2em;
@@ -50,7 +50,7 @@ html {
 /* Parágrafos */
 .prose p {
 	font-size: 1em;
-	margin: 1em 0;
+	margin: 1em 0 0.2em;
 }
 
 /* Links */

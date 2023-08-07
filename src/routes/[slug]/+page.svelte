@@ -1,21 +1,20 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
-	import Footer from '../../components/Footer.svelte';
 	export let data;
 
 	// abrir em nova aba links do post
 	function blankTarget(node: HTMLDivElement) {
 		const links = node.querySelectorAll('a');
 
-		links.forEach((link: { setAttribute: (arg0: string, arg1: string) => void; }) => {
+		links.forEach((link: { setAttribute: (arg0: string, arg1: string) => void }) => {
 			link.setAttribute('target', '_blank');
 		});
 
 		return {
 			// optional destroy function that runs when the component using this action is destroyed
 			destroy() {
-				links.forEach((link: { removeAttribute: (arg0: string) => void; }) => {
+				links.forEach((link: { removeAttribute: (arg0: string) => void }) => {
 					link.removeAttribute('target');
 				});
 			}
@@ -62,11 +61,3 @@
 		<svelte:component this={data.content} />
 	</div>
 </article>
-
-<!-- upvote -->
-<!-- <div class="py-8">
-	<Upvote blogSlug={data.slug} />
-	<Share />
-</div> -->
-
-<Footer />

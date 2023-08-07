@@ -1,5 +1,5 @@
 // place files you want to import through the `$lib` alias in this folder.
-export type Tags = 'sveltekit' | 'svelte';
+export type Tags = string;
 
 export type Post = {
 	title: string;
@@ -10,4 +10,11 @@ export type Post = {
 	tags?: Tags[];
 	category: string;
 	published: boolean;
+};
+
+export type PostModule = Post & {
+	module: {
+		metadata: Post;
+		html: string;
+	};
 };

@@ -1,9 +1,9 @@
 ---
-title: Antes da Startup
-description: Uma das vantagens de ter filhos é que quando você tem que dar conselhos. Pode se perguntar "o que eu diria aos meus próprios filhos?". Meus filhos são pequenos, mas consigo imaginar o que eu diria a eles sobre startups se estivessem na faculdade, e é isso que vou dizer a você.
-date: '2023-6-13'
+title: "Antes da Startup"
+description: "Startups são muito contraintuitivas. Não tenho certeza do motivo. Talvez seja apenas porque o conhecimento sobre elas ainda não permeou nossa cultura. Mas seja qual for a razão, iniciar uma startup é uma tarefa em que você nem sempre pode confiar nos seus instintos."
+date: '2023-7-18'
 category: 'startups'
-tags: ['y combinator', 'empreendedorismo', 'venture capital']
+tags: ['y combinator', 'empreendedorismo']
 published: true
 ---
 

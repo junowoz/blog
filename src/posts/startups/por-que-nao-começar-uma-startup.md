@@ -1,4 +1,11 @@
-# Por que não começar uma startup
+---
+title: "Por que não começar uma startup"
+description: "Agora temos dados suficientes sobre as taxas de sucesso do Y Combinator. Nossa primeira turma, no verão de 2005, tinha oito startups. Dessas oito, agora parece que pelo menos quatro tiveram sucesso. Três foram adquiridas: o Reddit foi uma fusão de dois, Reddit e Infogami, e uma terceira foi adquirida sobre a qual não podemos falar ainda. Outra daquela turma foi a Loopt, que está indo tão bem que provavelmente poderia ser adquirida em cerca de dez minutos se eles quisessem."
+date: '2023-08-09'
+category: 'startups'
+tags: ['y combinator', 'empreendedorismo']
+published: true
+---
 
 > Por Paul Graham, Março de 2007
 

@@ -1,6 +1,13 @@
-# Recursos para Startups
+---
+title: 'Recursos para Startups'
+description: 'Sites, blogs, livros e outros recursos para startups.'
+date: '2023-6-13'
+category: 'startups'
+tags: ['y combinator', 'empreendedorismo']
+published: true
+---
 
-## Sites e Blogs
+### Sites e Blogs
 
 - [Startup Playbook](https://playbook.samaltman.com/) - Sam Altman
 - [Startup School](https://www.startupschool.org/) - Y Combinator
@@ -8,7 +15,7 @@
 - [Why the Lean Start-Up Changes Everything](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything) - hbr.org
 - [How to Start a Startup - YouTube Playlist](https://youtube.com/playlist?list=PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1) - Y Combinator
 
-## Livros
+### Livros
 
 - [Startup: Manual do Empreendedor](https://www.amazon.com.br/Startup-Manual-Empreendedor-Steve-Blank/dp/8535263611) - Steve Blank e Bob Dorf
 - [Do Sonho À Realização Em 4 Passos: Estratégias para Criação de Empresas de Sucesso](https://www.amazon.com.br/Sonho-%C3%80-Realiza%C3%A7%C3%A3o-4-Passos/dp/8535265681) - Steve Blank

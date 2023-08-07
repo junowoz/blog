@@ -1,4 +1,10 @@
-# Princípios
+---
+title: "Princípios"
+description: "Uma série de 10 princípios que tento seguir no meu dia a dia."
+date: '2023-08-07'
+category: 'junowoz'
+published: true
+---
 
 Uma série de 10 princípios que tento seguir no meu dia a dia.
 

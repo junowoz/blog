@@ -1,6 +1,10 @@
-# Mentoria de Carreira para Desenvolvedores
-
-## Introdução
+---
+title: 'Mentoria de Carreira para Desenvolvedores'
+description: 'Existem três principais caminhos que você pode seguir após a graduação: mercado, academia, ou empreendedorismo.'
+date: '2023-05-10'
+category: 'carreira'
+published: true
+---
 
 Bem-vindos a esta mentoria de carreira para desenvolvedores, com foco em especialização e entrada no mercado de trabalho. Vamos explorar os possíveis caminhos que você pode seguir após a graduação e oferecer conselhos sobre como se preparar para esses caminhos.
 

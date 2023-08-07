@@ -1,4 +1,10 @@
-# Produtividade
+---
+title: "Pensamentos sobre Produtividade"
+description: "O crescimento composto, embora seja um conceito financeiro, também se aplica às carreiras e pode ser considerado mágico. Um pequeno ganho de produtividade, ao longo de 50 anos, é muito valioso. Se você fizer 10% a mais e melhorar 1% todos os dias em comparação com outra pessoa, a diferença composta é enorme. A produtividade não se limita a fazer mais, mas sim a fazer as coisas certas. Aqui estão algumas dicas, em 5 pontos principais, para melhorar sua produtividade:"
+date: '2023-05-10'
+category: 'junowoz'
+published: true
+---
 
 O crescimento composto, embora seja um conceito financeiro, também se aplica às carreiras e pode ser considerado mágico. Um pequeno ganho de produtividade, ao longo de 50 anos, é muito valioso. Se você fizer 10% a mais e melhorar 1% todos os dias em comparação com outra pessoa, a diferença composta é enorme. A produtividade não se limita a fazer mais, mas sim a fazer as coisas certas. Aqui estão algumas dicas, em 5 pontos principais, para melhorar sua produtividade:
 
