@@ -1,6 +1,9 @@
-type DateStyle = Intl.DateTimeFormatOptions['dateStyle']
-
-export function formatDate(date: string, dateStyle: DateStyle = 'medium', locales = 'pt-BR') {
-	const formatter = new Intl.DateTimeFormat(locales, { dateStyle })
-	return formatter.format(new Date(date))
-}
+export function formatDate(date: string) {
+	const [year, month, day] = date.split('-');
+	const months = [
+	  'Jan', 'Fev', 'Mar', 'Abr',
+	  'Mai', 'Jun', 'Jul', 'Ago',
+	  'Set', 'Out', 'Nov', 'Dez'
+	];
+	return `${Number(day)} de ${months[Number(month) - 1]}. ${year}`;
+  }

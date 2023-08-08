@@ -23,6 +23,7 @@
 	// função para limpar os filtros
 	function clearFilter() {
 		selectedTags = [];
+		searchQuery = '';
 	}
 
 	//date sort
@@ -34,7 +35,7 @@
 
 	//switch pages
 	let currentPage = 1;
-	const postsPerPage = 10;
+	const postsPerPage = 7;
 
 	function nextPage() {
 		currentPage += 1;
@@ -51,6 +52,30 @@
 			currentPage = 1;
 		}
 	}
+
+	//sort posts
+	$: sortedPosts = data.posts
+		.filter(
+			(post) =>
+				(!selectedTags.length ||
+					selectedTags.some(
+						(tag) => (post.tags ? post.tags.includes(tag) : false) || post.category === tag
+					)) &&
+				(!searchQuery ||
+					post.slug.toLowerCase().includes(searchQuery.toLowerCase()) ||
+					(post.tags
+						? post.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+						: false) ||
+					post.category.toLowerCase().includes(searchQuery.toLowerCase()))
+		)
+		.sort((a, b) =>
+			sortOrder === 'Antigos' ? a.date.localeCompare(b.date) : b.date.localeCompare(a.date)
+		);
+
+	$: displayedPosts = sortedPosts.slice(
+		(currentPage - 1) * postsPerPage,
+		currentPage * postsPerPage
+	);
 </script>
 
 <svelte:head>
@@ -60,6 +85,7 @@
 
 <main class="max-w-screen-sm sm:w-full mx-4 md:mx-auto my-2">
 	<NavBar />
+	<!-- BEGIN -->
 	<div class="flex mt-4 space-x-2">
 		<!-- Search Input -->
 		<input
@@ -112,7 +138,7 @@
 	<!-- posts -->
 	<div class="my-4">
 		<ul class="space-y-4">
-			{#each data.posts as post}
+			{#each displayedPosts as post}
 				<li>
 					<a
 						href={post.slug}
@@ -129,7 +155,7 @@
 						</time>
 					</small>
 					{#if post.description}
-						<p class="text-sm leading-6 line-clamp-2 text-gray-600 mt-1">
+						<p class="text-sm leading-6 line-clamp-2 text-gray-700 mt-1">
 							{post.description}
 						</p>
 					{/if}
@@ -150,9 +176,9 @@
 		</button>
 		<button
 			on:click={nextPage}
-			disabled={currentPage >= data.posts.length / postsPerPage}
+			disabled={currentPage * postsPerPage >= sortedPosts.length}
 			class={`px-2 py-1 ${
-				currentPage >= data.posts.length / postsPerPage
+				currentPage * postsPerPage >= sortedPosts.length
 					? ' text-gray-500 cursor-not-allowed'
 					: 'bg-white text-blue-500'
 			}`}
@@ -160,5 +186,6 @@
 			Seguinte »
 		</button>
 	</div>
+	<!-- END -->
 	<Footer />
 </main>

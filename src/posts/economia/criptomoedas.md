@@ -1,7 +1,7 @@
 ---
 title: 'Criptomoedas: Bitcoin, Ethereum e conceitos essenciais'
 description: Ele surge em 2008 em um artigo, graças ao "Satoshi Nakamoto". É um sistema que permite que pessoas possam enviar dinheiro pela internet. Surge com os CypherPunks, os quais são um grupo de pesquisadores criptográficos, que procuravam formas de fazer que a internet fosse mais segura. Na década de 90, eles criaram a PGP, que permitia você enviar mensagens para pessoas de forma criptografada.
-date: '2023-4-16'
+date: '2023-04-16'
 category: 'economia'
 tags: ['web3']
 published: true

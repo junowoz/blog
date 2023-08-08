@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "npm run generate-index && vite dev",
+		"dev": "npm run generate-index && vite dev --host --port 3333",
 		"build": "npm run generate-index && vite build",
 		"preview": "vite preview",
 		"test": "playwright test",

@@ -1,7 +1,7 @@
 ---
 title: "O que é Venture Capital?"
 description: Venture Capital é um tipo de investimento de risco, onde o investidor compra uma parte da empresa em troca de dinheiro.
-date: '2023-6-13'
+date: '2023-06-13'
 category: 'startups'
 published: true
 ---
