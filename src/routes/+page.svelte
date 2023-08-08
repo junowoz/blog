@@ -26,7 +26,7 @@
 	}
 
 	//date sort
-	let sortOrder = 'Mais novos';
+	let sortOrder = 'Novos';
 	function handleSortChange(event: Event) {
 		const target = event.target as HTMLSelectElement;
 		sortOrder = target.value;
@@ -47,7 +47,7 @@
 
 	//clear current page with filter
 	$: {
-		if (selectedTags.length > 0 || searchQuery || sortOrder !== 'Mais novos') {
+		if (selectedTags.length > 0 || searchQuery || sortOrder !== 'Novos') {
 			currentPage = 1;
 		}
 	}
@@ -68,7 +68,7 @@
 	<div class="flex mt-4 space-x-2">
 		<!-- Search Input -->
 		<input
-			class="flex-grow py-1 px-2 border border-gray-300 rounded-md text-sm"
+			class="flex-grow py-1 px-2 border border-gray-300 rounded-md text-sm min-w-0"
 			type="text"
 			placeholder="Pesquisar.."
 			bind:value={searchQuery}
@@ -80,10 +80,10 @@
 			class="flex-grow-1 px-2 border border-gray-300 rounded-md text-sm"
 			name="sort"
 		>
-			<option>Mais novos</option>
-			<option>Mais antigos</option>
+			<option>Novos</option>
+			<option>Antigos</option>
 		</select>
-		<a href="/rss.xml" target="_blank" rel="noopener">
+		<a class="flex-none" href="/rss.xml" target="_blank" rel="noopener">
 			<button>
 				<img
 					src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png"
@@ -127,7 +127,7 @@
 											.includes(searchQuery.toLowerCase())) : false) || post.category
 								.toLowerCase()
 								.includes(searchQuery.toLowerCase())))
-				.sort( (a, b) => (sortOrder === 'Mais novos' ? new Date(b.date).getTime() - new Date(a.date).getTime() : new Date(a.date).getTime() - new Date(b.date).getTime()) )
+				.sort( (a, b) => (sortOrder === 'Novos' ? new Date(b.date).getTime() - new Date(a.date).getTime() : new Date(a.date).getTime() - new Date(b.date).getTime()) )
 				.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage) as post}
 				<li>
 					<a
@@ -183,10 +183,4 @@
 		</button>
 	</div>
 	<Footer />
-	<button on:click={increment}>
-		{count}
-	</button>
 </main>
-<button on:click={increment}>
-	{count}
-</button>
