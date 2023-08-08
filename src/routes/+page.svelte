@@ -148,14 +148,14 @@
 					>
 						{post.title}
 					</a>
-					<small class="text-gray-800">
+					<small class="text-gray-700">
 						—
 						<time datetime={formatDate(post.date)}>
 							{formatDate(post.date)}
 						</time>
 					</small>
 					{#if post.description}
-						<p class="text-sm leading-6 line-clamp-2 text-gray-700 mt-1">
+						<p class="text-sm leading-6 line-clamp-2 text-gray-900 mt-1">
 							{post.description}
 						</p>
 					{/if}
