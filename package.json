@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@types/marked": "^5.0.1",
 		"fast-glob": "^3.3.1",
+		"flowbite": "^1.8.1",
 		"marked": "^7.0.0",
 		"nodemon": "^3.0.1",
 		"rehype-slug": "^5.1.0",
