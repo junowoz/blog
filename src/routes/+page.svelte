@@ -51,11 +51,6 @@
 			currentPage = 1;
 		}
 	}
-
-
-	let count = 0
-
-	const increment = () => (count += 1)
 </script>
 
 <svelte:head>
@@ -177,9 +172,6 @@
 			}`}
 		>
 			Seguinte »
-		</button>
-		<button on:click={increment}>
-			{count}
 		</button>
 	</div>
 	<Footer />
