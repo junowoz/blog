@@ -1,5 +1,16 @@
+<script>
+	let darkMode = false;
+
+	function toggleDarkMode() {
+		darkMode = !darkMode;
+		document.documentElement.classList.toggle('dark', darkMode);
+	}
+</script>
+
 <nav class="flex items-center justify-between pt-4">
-	<a href="/" class="text-2xl font-semibold text-gray-900">Hyperuranion Blog</a>
+	<a href="/" class="text-2xl font-semibold text-neutral-900 dark:text-neutral-50"
+		>Hyperuranion Blog</a
+	>
 
 	<!-- <span class="gap-10 sm:flex sm:items-center">
 		 <span
@@ -8,7 +19,7 @@
 					<a
 						href="/categorias/"
 						title="/categorias/"
-						class="hover:text-gray-900 text-gray-600"
+						class="hover:text-neutral-900 text-neutral-600"
 						data-test-link-to="/categorias/">Categorias</a
 					>
 				</li>
@@ -20,7 +31,7 @@
 					<a
 						href="mailto:junogouvea@gmail.com"
 						title="Contact"
-						class="text-gray-700 cursor-pointer hover:text-blue-500"
+						class="text-neutral-700 cursor-pointer hover:text-blue-500"
 						><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
 							<path
 								stroke-linecap="round"
@@ -34,4 +45,5 @@
 			</ul></span
 		></span
 	> -->
+	<!-- <button on:click={toggleDarkMode}>Dark</button> -->
 </nav>

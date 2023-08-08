@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Footer from '../../components/Footer.svelte';
 	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
 	export let data;
@@ -29,29 +28,29 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<main class="max-w-screen-sm sm:w-full mx-4 md:mx-auto my-2">
+<div>
 	<!-- Header -->
 	<div class="mt-6">
-		<a href="/" class="text-gray-600">« voltar </a>
-		<nav class="flex items-center justify-between pb-2 pt-4 border-b border-gray-200">
-			<span class="text-2xl font-bold text-gray-900">{data.meta.title}</span>
+		<a href="/" class="text-neutral-600 dark:text-neutral-400 w-full">« voltar </a>
+		<nav class="flex items-center justify-between pb-2 pt-4 border-b border-neutral-200">
+			<span class="text-2xl font-bold text-neutral-900 dark:text-neutral-50">{data.meta.title}</span>
 		</nav>
 	</div>
 
 	<!-- Tags -->
 	<article class="mb-4">
-		<p class="text-md text-gray-600 my-2">Publicado {formatDate(data.meta.date)}</p>
+		<p class="text-md text-neutral-600 dark:text-neutral-400 my-2">Publicado {formatDate(data.meta.date)}</p>
 
 		<div>
 			<span
-				class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-200 text-gray-900 mr-2 mb-2"
+				class="dark:bg-neutral-600 dark:text-neutral-50 inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-neutral-200 text-neutral-900 mr-2 mb-2"
 			>
 				{data.meta.category}
 			</span>
 			{#if data.meta.tags}
 				{#each data.meta.tags as tag}
 					<span
-						class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-200 text-gray-900 mr-2 mb-2"
+						class="dark:bg-neutral-600 dark:text-neutral-50 inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-neutral-200 text-neutral-900 mr-2 mb-2"
 						>{tag}</span
 					>
 				{/each}
@@ -59,10 +58,8 @@
 		</div>
 
 		<!-- Post -->
-		<div class="prose max-w-full mx-auto py-4 text-gray-900" use:blankTarget>
+		<div class="prose max-w-full mx-auto py-4 text-neutral-900 dark:text-neutral-50" use:blankTarget>
 			<svelte:component this={data.content} />
 		</div>
 	</article>
-
-	<Footer />
-</main>
+</div>
