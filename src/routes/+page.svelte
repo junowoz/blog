@@ -60,7 +60,34 @@
 
 <main class="max-w-screen-sm sm:w-full mx-4 md:mx-auto my-2">
 	<NavBar />
-
+	<div class="flex mt-4 space-x-2">
+		<!-- Search Input -->
+		<input
+			class="flex-grow py-1 px-2 border border-gray-300 rounded-md text-sm min-w-0"
+			type="text"
+			placeholder="Pesquisar.."
+			bind:value={searchQuery}
+		/>
+		<!-- Sorting Select -->
+		<select
+			bind:value={sortOrder}
+			on:change={handleSortChange}
+			class="flex-grow-1 px-2 border border-gray-300 rounded-md text-sm"
+			name="sort"
+		>
+			<option>Novos</option>
+			<option>Antigos</option>
+		</select>
+		<a class="flex-none" href="/rss.xml" target="_blank" rel="noopener">
+			<button>
+				<img
+					src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png"
+					alt="rss"
+					class="w-auto h-6 flex justify-center items-center"
+				/>
+			</button>
+		</a>
+	</div>
 
 	<!-- tag clouds -->
 	<div class="mt-4">
@@ -85,16 +112,7 @@
 	<!-- posts -->
 	<div class="my-4">
 		<ul class="space-y-4">
-			{#each data.posts
-				.filter((post) => (!selectedTags.length || selectedTags.some((tag) => (post.tags ? post.tags.includes(tag) : false) || post.category === tag)) && (!searchQuery || post.slug
-								.toLowerCase()
-								.includes(searchQuery.toLowerCase()) || (post.tags ? post.tags.some((tag) => tag
-											.toLowerCase()
-											.includes(searchQuery.toLowerCase())) : false) || post.category
-								.toLowerCase()
-								.includes(searchQuery.toLowerCase())))
-				.sort( (a, b) => (sortOrder === 'Novos' ? new Date(b.date).getTime() - new Date(a.date).getTime() : new Date(a.date).getTime() - new Date(b.date).getTime()) )
-				.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage) as post}
+			{#each data.posts as post}
 				<li>
 					<a
 						href={post.slug}
