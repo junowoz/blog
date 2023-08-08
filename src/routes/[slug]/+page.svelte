@@ -58,7 +58,7 @@
 		</div>
 
 		<!-- Post -->
-		<div class="prose max-w-full mx-auto py-4 text-neutral-900 dark:text-neutral-50" use:blankTarget>
+		<div class="prose max-w-full mx-auto pb-4 pt-2 text-neutral-900 dark:text-neutral-50" use:blankTarget>
 			<svelte:component this={data.content} />
 		</div>
 	</article>

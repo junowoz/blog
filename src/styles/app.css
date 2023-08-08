@@ -46,7 +46,7 @@
 /* Parágrafos */
 .prose p {
 	font-size: 1em;
-	margin: 1em 0 0.2em;
+	margin: 0.2em 0 1em;
 }
 
 /* Links */
