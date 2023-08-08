@@ -145,3 +145,11 @@
 	background-color: #eeeeee;
 	font-weight: 600;
 }
+
+.search-input::placeholder { /* Cor do placeholder para o tema claro */
+    color: #888; /* Substitua por sua cor desejada */
+}
+
+.dark .search-input::placeholder { /* Cor do placeholder para o tema escuro */
+    color: #333; /* Substitua por sua cor desejada */
+}

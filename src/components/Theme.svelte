@@ -4,6 +4,18 @@
 	let darkMode = false;
 	let theme = 'light';
 
+	function updateThemeBasedOnTime() {
+		const currentHour = new Date().getHours();
+		if (currentHour >= 6 && currentHour < 18) {
+			theme = 'light';
+		} else {
+			theme = 'dark';
+		}
+		darkMode = theme === 'dark';
+		document.documentElement.classList.toggle('dark', darkMode);
+		localStorage.setItem('theme', theme);
+	}
+
 	function toggleDarkMode() {
 		darkMode = !darkMode;
 		theme = darkMode ? 'dark' : 'light';
@@ -12,22 +24,21 @@
 	}
 
 	onMount(() => {
-		// Primeiro, verifique se existe uma preferência salva no localStorage
+		// Carregue o tema salvo ou defina com base na hora do dia
 		const savedTheme = localStorage.getItem('theme');
 		if (savedTheme) {
 			theme = savedTheme;
-		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			theme = 'dark';
 		} else {
-			const currentHour = new Date().getHours();
-			if (currentHour >= 6 && currentHour < 18) {
-				theme = 'light';
-			} else {
-				theme = 'dark';
-			}
+			updateThemeBasedOnTime();
 		}
 		darkMode = theme === 'dark';
 		document.documentElement.classList.toggle('dark', darkMode);
+
+		// Verifique a hora a cada 15 minutos e atualize o tema se necessário
+		const intervalId = setInterval(updateThemeBasedOnTime, 15 * 60 * 1000);
+
+		// Certifique-se de limpar o intervalo quando o componente for destruído
+		return () => clearInterval(intervalId);
 	});
 
 	// Utilizar a reação para garantir que o tema seja atualizado quando darkMode mudar
