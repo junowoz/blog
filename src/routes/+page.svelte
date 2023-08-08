@@ -83,6 +83,15 @@
 			<option>Mais novos</option>
 			<option>Mais antigos</option>
 		</select>
+		<a href="/rss.xml" target="_blank" rel="noopener">
+			<button>
+				<img
+					src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png"
+					alt="rss"
+					class="w-auto h-6 flex justify-center items-center"
+				/>
+			</button>
+		</a>
 	</div>
 
 	<!-- tag clouds -->
