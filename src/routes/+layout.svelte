@@ -18,7 +18,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RVMBTKCTP0"></script>
 </svelte:head>
 
-<main class="max-w-screen-sm sm:w-full mx-2 md:mx-auto my-2 bg-inherit dark:bg-neutral-800">
+<body class="max-w-screen-sm sm:w-full mx-4 md:mx-auto my-2 bg-inherit dark:bg-neutral-800">
 	<slot />
 	<Footer />
-</main>
+</body>

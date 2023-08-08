@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Theme from '../../components/Theme.svelte';
 	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
 	export let data;
@@ -30,16 +31,21 @@
 
 <div>
 	<!-- Header -->
-	<div class="mt-6">
-		<a href="/" class="text-neutral-600 dark:text-neutral-400 w-full">« voltar </a>
-		<nav class="flex items-center justify-between pb-2 pt-4 border-b border-neutral-200">
-			<span class="text-2xl font-bold text-neutral-900 dark:text-neutral-50">{data.meta.title}</span>
-		</nav>
+	<nav class="flex items-center justify-between pt-4 w-full">
+		<a href="/" class="py-1 text-neutral-600 dark:text-neutral-300">« voltar </a>
+		<Theme />
+	</nav>
+	<div
+		class="flex items-center justify-between pb-2 pt-4 border-b border-neutral-200 dark:border-neutral-700"
+	>
+		<span class="text-2xl font-bold text-neutral-900 dark:text-neutral-50">{data.meta.title}</span>
 	</div>
 
 	<!-- Tags -->
 	<article class="mb-4">
-		<p class="text-md text-neutral-600 dark:text-neutral-400 my-2">Publicado {formatDate(data.meta.date)}</p>
+		<p class="text-md text-neutral-600 dark:text-neutral-300 my-2">
+			Publicado {formatDate(data.meta.date)}
+		</p>
 
 		<div>
 			<span
@@ -58,7 +64,10 @@
 		</div>
 
 		<!-- Post -->
-		<div class="prose max-w-full mx-auto pb-4 pt-2 text-neutral-900 dark:text-neutral-50" use:blankTarget>
+		<div
+			class="prose max-w-full mx-auto pb-4 pt-2 text-neutral-900 dark:text-neutral-50"
+			use:blankTarget
+		>
 			<svelte:component this={data.content} />
 		</div>
 	</article>

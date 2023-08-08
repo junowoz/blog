@@ -51,7 +51,12 @@
 
 /* Links */
 .prose a {
-	color: rgb(59 130 246);
+	color: rgb(63 131 248);
+	text-decoration: none;
+}
+
+.dark .prose a {
+	color: rgb(118 169 250);
 	text-decoration: none;
 }
 
@@ -88,6 +93,13 @@
 	border-left: 0.25rem solid #ccc;
 	padding: 0 1em;
 	color: #42484f;
+}
+
+.dark .prose blockquote {
+	border-left: 0.25rem solid #ccc;
+	padding: 0 1em;
+	color: #ccc;
+	/* outros estilos para o tema escuro */
 }
 
 /* Imagens */
