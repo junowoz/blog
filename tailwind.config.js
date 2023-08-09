@@ -3,7 +3,10 @@ export default {
 	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {},
+		fontFamily: {
+			sans: [ 'Arial', 'sans-serif' ],
+		  }
 	},
 	plugins: [require('flowbite/plugin')]
 };
