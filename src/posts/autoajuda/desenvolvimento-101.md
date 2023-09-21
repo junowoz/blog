@@ -1,5 +1,5 @@
 ---
-title: 'Mentoria de Carreira para Desenvolvedores'
+title: 'Desenvolvimento 101: O Guia Definitivo para Iniciantes'
 description: 'Existem três principais caminhos que você pode seguir após a graduação: mercado, academia, ou empreendedorismo.'
 date: '2023-05-10'
 category: 'carreira'

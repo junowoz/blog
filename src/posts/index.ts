@@ -1,7 +1,7 @@
 import type { PostModule } from '$lib/types';
 
 export const index: Record<string, Promise<PostModule>> = {
-	'mentoria-de-carreira': import('./autoajuda/mentoria-de-carreira.md'),
+	'desenvolvimento-101': import('./autoajuda/desenvolvimento-101.md'),
 	'principios': import('./autoajuda/principios.md'),
 	'produtividade': import('./autoajuda/produtividade.md'),
 	'java': import('./computacao/java.md'),

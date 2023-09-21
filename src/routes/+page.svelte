@@ -34,7 +34,7 @@
 
 	//switch pages
 	let currentPage = 1;
-	const postsPerPage = 7;
+	const postsPerPage = 14;
 
 	function nextPage() {
 		currentPage += 1;
@@ -84,7 +84,7 @@
 
 <NavBar />
 <!-- BEGIN -->
-<div class="flex mt-4 space-x-2">
+<div class="flex mt-6 space-x-2">
 	<!-- Search Input -->
 	<input
 		class="search-input flex-grow py-1 border border-neutral-300 dark:border-neutral-200 rounded-md text-sm min-w-0 bg-neutral-50 dark:bg-neutral-300"
@@ -114,7 +114,7 @@
 </div>
 
 <!-- tag clouds -->
-<div class="mt-4">
+<div class="mt-6">
 	{#each Array.from(new Set( [...data.posts.flatMap( (post) => (post.tags ? post.tags : []) ), ...data.posts.map((post) => post.category)] )) as item (item)}
 		<button
 			class={selectedTags.includes(item)
@@ -134,29 +134,31 @@
 </div>
 
 <!-- posts -->
-<div class="my-4">
+<div class="my-6">
 	<ul class="space-y-4">
 		{#each displayedPosts as post}
-			<li>
-				<a
-					href={post.slug}
-					data-title={post.title}
-					data-date={formatDate(post.date)}
-					class="text-blue-500 hover:underline visited:text-purple-500 w-full font-semibold dark:text-blue-400 dark:visited:text-purple-300"
-				>
-					{post.title}
-				</a>
-				<small class="text-neutral-700 dark:text-neutral-200">
-					—
-					<time datetime={formatDate(post.date)}>
-						{formatDate(post.date)}
-					</time>
-				</small>
-				{#if post.description}
+			<li class="flex items-center">
+				<div class="flex items-center w-full">
+					<a
+						href={post.slug}
+						data-title={post.title}
+						data-date={formatDate(post.date)}
+						class="text-blue-500 hover:underline visited:text-purple-500 dark:text-blue-400 dark:visited:text-purple-300 truncate font-semibold"
+					>
+						{post.title}
+					</a>
+					<small class="text-neutral-700 dark:text-neutral-200 flex-shrink-0 ml-1">
+						—
+						<time datetime={formatDate(post.date)}>
+							{formatDate(post.date)}
+						</time>
+					</small>
+				</div>
+				<!-- {#if post.description}
 					<p class="text-sm leading-6 line-clamp-2 text-neutral-900 dark:text-neutral-50 mt-1">
 						{post.description}
 					</p>
-				{/if}
+				{/if} -->
 			</li>
 		{/each}
 	</ul>
